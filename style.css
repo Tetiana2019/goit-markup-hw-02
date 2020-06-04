@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
-.header-logo a {
+.company-logo a {
   text-decoration: none;
   color: #000;
   font-size: 26px;
@@ -21,7 +21,7 @@ body {
 .logo {
   color: #2196f3;
 }
-.header-list li a {
+.header-list .header-link {
   font-size: 14px;
   letter-spacing: 0px;
   color: #212121;
@@ -29,7 +29,11 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
-.header-list li a:hover {
+.header-list .header-link:hover,
+.header-list .header-link:focus {
+  color: #2196f3;
+}
+.header-list .header-link.current{
   color: #2196f3;
 }
 .header-contacts a {
@@ -40,6 +44,127 @@ body {
   font-weight: 500;
   text-decoration: none;
 }
-.header-contacts a:hover{
-    color: #2196f3;
+.header-contacts a:hover {
+  color: #2196f3;
+}
+.order {
+  background-color: #3d3d3d;
+}
+.order-title h1 {
+  font-size: 44px;
+  letter-spacing: 3px;
+  line-height: 3.75;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+.orderService-btn {
+  max-width: 200px;
+  width: 100%;
+  min-height: 50px;
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.15));
+  background-color: #fff;
+  color: #212121;
+  border-radius: 4px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.orderService-btn:hover {
+  background-color: #2196f3;
+  color: #212121;
+  transition: 0.3s;
+}
+.section-subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* Поменять цвет для wedo-info h2 */
+.wedo-info h2 {
+  color: #aca5a5;
+}
+.description-text {
+  max-width: 255px;
+  width: 100%;
+  min-height: 90px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #757575;
+  font-weight: 400;
+}
+.section-title {
+  font-size: 36px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+}
+.team-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+.position {
+  color: #757575;
+  font-weight: 400;
+}
+footer {
+  background-color: #2f303a;
+  color: #fff;
+}
+.footer-logo a {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Raleway";
+  font-weight: 700;
+  text-decoration: none;
+}
+/* Задать вопрос по общим стилям footer-contacts*/
+.footer-contact {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.footer-address {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.socials-title {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.copyrights {
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 400;
+  text-align: center;
+}
+.portfolio-filters button {
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  border: 1px solid transparent;
+  font-size: 16px;
+  line-height: 26px;
+  color: #212121;
+  font-weight: 500;
+  text-align: center;
+}
+.portfolio-filters button:hover {
 }

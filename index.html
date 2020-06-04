@@ -5,27 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="header-nav">
-          <div class="header-logo">
+          <div class="company-logo">
             <a href="#"><span class="logo">Web</span> Studio</a>
           </div>
           <div class="header-wrap">
             <ul class="header-list">
-              <li><a href="#">Студия</a></li>
-              <li><a href="/portfolio.html">Портфолио</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="#" class="header-link current">Студия</a></li>
+              <li><a href="./portfolio.html" class="header-link">Портфолио</a></li>
+              <li><a href="#" class="header-link">Контакты</a></li>
             </ul>
           </div>
           <div class="header-contacts">
@@ -58,7 +51,7 @@
                 <img src="images/description/description1.svg" alt="" />
               </div>
               <div class="description-context">
-                <h2>Внимание к деталям</h2>
+                <h2 class="section-subtitle">Внимание к деталям</h2>
                 <p class="description-text">
                   Идейные соображения, а также начало повседневной работы по
                   формированию позиции.
@@ -70,7 +63,7 @@
                 <img src="images/description/description2.svg" alt="" />
               </div>
               <div class="description-context">
-                <h2>Пунктуальность</h2>
+                <h2 class="section-subtitle">Пунктуальность</h2>
                 <p class="description-text">
                   Задача организации, в особенности же рамки и место обучения
                   кадров влечет за собой.
@@ -82,7 +75,7 @@
                 <img src="images/description/description3.svg" alt="" />
               </div>
               <div class="description-context">
-                <h2>Планирование</h2>
+                <h2 class="section-subtitle">Планирование</h2>
                 <p class="description-text">
                   Равным образом консультация с широким активом в значительной
                   степени обуславливает.
@@ -94,7 +87,7 @@
                 <img src="images/description/description4.svg" alt="" />
               </div>
               <div class="description-context">
-                <h2>Современные технологии</h2>
+                <h2 class="section-subtitle">Современные технологии</h2>
                 <p class="description-text">
                   Значимость этих проблем настолько очевидна, что реализация
                   плановых заданий.
@@ -104,7 +97,7 @@
           </div>
           <hr />
           <div class="wedo-title">
-            <h3>Чем мы занимаемся</h3>
+            <h3 class="section-title">Чем мы занимаемся</h3>
           </div>
           <div class="wedo-items">
             <div class="wedo-item">
@@ -112,7 +105,7 @@
                 <img src="images/description/desktop.svg" alt="" />
               </div>
               <div class="wedo-info">
-                <p class="wedo-text">Десктопные приложения</p>
+                <h2 class="section-subtitle">Десктопные приложения</h2>
               </div>
             </div>
             <div class="wedo-item">
@@ -120,7 +113,7 @@
                 <img src="images/description/mobile.svg" alt="" />
               </div>
               <div class="wedo-info">
-                <p class="wedo-text">Мобильные приложения</p>
+                <h2 class="section-subtitle">Мобильные приложения</h2>
               </div>
             </div>
             <div class="wedo-item">
@@ -128,7 +121,7 @@
                 <img src="images/description/design.svg" alt="" />
               </div>
               <div class="wedo-info">
-                <p class="wedo-text">Дизайнерские решения</p>
+                <h2 class="section-subtitle">Дизайнерские решения</h2>
               </div>
             </div>
           </div>
@@ -136,14 +129,14 @@
       </section>
       <section class="team">
         <div class="container">
-          <h3>Наша команда</h3>
+          <h3 class="section-title">Наша команда</h3>
           <div class="team-items">
             <div class="team-item">
               <div class="team-photo">
                 <img src="images/team/John.svg" alt="" />
               </div>
-              <h4>John Smith</h4>
-              <p class="team-position">Product Designer</p>
+              <h4 class="team-name">John Smith</h4>
+              <p class="team-name position">Product Designer</p>
               <div class="team-socials">
                 <a href="#"> <img src="images/team/instagram.svg" alt="" /></a>
                 <a href="#"> <img src="images/team/twitter.svg" alt="" /> </a>
@@ -155,8 +148,8 @@
               <div class="team-photo">
                 <img src="images/team/marta.svg" alt="" />
               </div>
-              <h4>Marta Stewart</h4>
-              <p class="team-position">Frontend Developer</p>
+              <h4 class="team-name">Marta Stewart</h4>
+              <p class="team-name position">Frontend Developer</p>
               <div class="team-socials">
                 <a href="#"> <img src="images/team/instagram.svg" alt="" /></a>
                 <a href="#"> <img src="images/team/twitter.svg" alt="" /> </a>
@@ -168,8 +161,8 @@
               <div class="team-photo">
                 <img src="images/team/robert.svg" alt="" />
               </div>
-              <h4>Robert Jakis</h4>
-              <p class="team-position">Marketing</p>
+              <h4 class="team-name">Robert Jakis</h4>
+              <p class="team-name position">Marketing</p>
               <div class="team-socials">
                 <a href="#"> <img src="images/team/instagram.svg" alt="" /></a>
                 <a href="#"> <img src="images/team/twitter.svg" alt="" /> </a>
@@ -181,8 +174,8 @@
               <div class="team-photo">
                 <img src="images/team/martin.svg" alt="" />
               </div>
-              <h4>Martin Doe</h4>
-              <p class="team-position">UI Designer</p>
+              <h4 class="team-name">Martin Doe</h4>
+              <p class="team-name position">UI Designer</p>
               <div class="team-socials">
                 <a href="#"> <img src="images/team/instagram.svg" alt="" /></a>
                 <a href="#"> <img src="images/team/twitter.svg" alt="" /> </a>
@@ -195,7 +188,7 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h3>Постоянные клиенты</h3>
+          <h3 class="section-title">Постоянные клиенты</h3>
           <div class="clients-logo">
             <img src="images/clients/Client1.svg" alt="" class="client-logo" />
             <img src="images/clients/Client2.svg" alt="" class="client-logo" />
@@ -211,8 +204,8 @@
       <div class="footer-logo">
         <a href="#"><span class="logo">Web</span> Studio</a>
       </div>
-      <div class="footer-contacts">
-        <ul>
+      <div class="footer-wrap">
+        <ul class="footer-contacts">
           <li>
             <a
               class="footer-address"
@@ -221,12 +214,14 @@
             >
           </li>
           <li>
-            <a class="footer-mail" href="mailto:info@devstudio.com"
+            <a class="footer-contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="footer-contact" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
