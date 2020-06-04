@@ -38,6 +38,7 @@ body {
   color: #757575;
   font-family: "Roboto";
   font-weight: 500;
+  text-decoration: none;
 }
 .header-contacts a:hover{
     color: #2196f3;
