@@ -9,15 +9,17 @@
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
+  --text-color: #fff;
   --title-text-color: #212121;
   --subtitle-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-bg-color: #f5f4fa;
-  --footer-text-color:#fff;
-
+  --primary-bg-color: #fff;
+  --footer-text-color: #fff;
+  --primary-button-color: #f5f4fa;
+  --text-button-color: #fff;
 }
 body {
-  background-color: #fff;
+  background-color: var(--primary-bg-color);
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
@@ -59,6 +61,7 @@ body {
 .header-contacts .contacts-link:focus {
   color: var(--accent-color);
 }
+/* Поменять на картинку */
 .order {
   background-color: #3d3d3d;
 }
@@ -71,13 +74,14 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.orderService-btn {
+.order-btn {
   max-width: 200px;
   width: 100%;
   min-height: 50px;
   filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.15));
-  background-color: #fff;
-  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+  color: var(--text-button-color);
+  transition: 0.3s;
   border-radius: 4px;
   font-size: 16px;
   letter-spacing: 1px;
@@ -91,11 +95,10 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
-.orderService-btn:hover,
-.orderService-btn:focus {
-  background-color: var(--accent-color);
-  color: #fff;
-  transition: 0.3s;
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--primary-bg-color);
+  color: var(--secondary-text-color);
 }
 .section-subtitle {
   font-size: 14px;
@@ -131,7 +134,7 @@ body {
 }
 footer {
   background-color: #2f303a;
-  color:var(--footer-text-color);
+  color: var(--footer-text-color);
 }
 .footer-logo a {
   font-size: 22px;
@@ -141,7 +144,6 @@ footer {
   font-weight: 700;
   text-decoration: none;
 }
-/* Задать вопрос по общим стилям footer-contacts*/
 .footer-contact {
   font-size: 14px;
   line-height: 1.5;
@@ -149,13 +151,10 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.footer-address {
+.footer-contact.address {
   color: var(--footer-text-color);
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
 }
+
 .socials-title {
   font-size: 14px;
   color: var(--footer-text-color);
@@ -169,14 +168,49 @@ footer {
   font-weight: 400;
   text-align: center;
 }
-.portfolio-filters button {
+.portfolio-filters .portfolio-btn {
   border-radius: 4px;
-  background-color: var(--primary-bg-color);
+  background-color: var(--primary-button-color);
   border: 1px solid transparent;
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
   text-align: center;
+  color: var(--secondary-text-color);
 }
-.portfolio-filters button:hover {
+.portfolio-filters .portfolio-btn:hover,
+.portfolio-filters .portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--hover-text-color);
+}
+.portfolio-filters .current{
+  background-color: var(--accent-color);
+  color: var(--hover-text-color);
+}
+.portfolio-item {
+  text-decoration: none;
+}
+/* Поменять цвет текста */
+.portfolio-item .text {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 1.75;
+  /* color:var(--text-color);*/
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+.portfolio-item .title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 2.25;
+  color: var(--title-text-color);
+  font-weight: 700;
+}
+.portfolio-item .subtitle {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--subtitle-text-color);
+  font-family: "Roboto";
+  font-weight: 400;
 }
